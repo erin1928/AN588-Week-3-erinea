@@ -43,5 +43,4 @@ x <- 0:30
 l = 15
 probset <- dpois(x = x, lambda = l)
 barplot(probset, names.arg = x, space = 0, xlab = "Number of Calls", ylab = "Probability", main = "Probability Mass Function")
-
 ```
