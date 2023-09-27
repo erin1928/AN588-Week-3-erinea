@@ -18,3 +18,12 @@ What you did in your own code that might help to improve theirs.
 What challenges, if any, you both faced in your code that could not be helped by comparison.
 
 Whether the annotation/commenting on your peer’s Original Homework Code is readable and interpretable to you, and if not then how it could be improved.
+
+#what is the probability she will hear more than 8 calls during any given session?
+# mean is 15
+# goes out for 2 hours
+# Poisson random variable = x
+```{r 8 calls, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
