@@ -21,13 +21,27 @@ Whether the annotation/commenting on your peer’s Original Homework Code is rea
 
 # what is the probability she will hear more than 8 calls during any given session?
 # mean is 15
-# goes out for 2 hours
 # Poisson random variable = x
 ```{r 8 or more calls, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+ppois(q = 8, lambda = 15, upper.tri(TRUE))
+```
+# Probability of no calls
+```{r no calls, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+dpois(x = 0, lambda =15)
+```
+# Probability of exactly 3 calls
+```{r exactly 3, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+dpois(x = 3, lambda =15)
+```
+# Plot the relevant Poisson mass function over the values in range 0 ≤ x ≤ 30.
+```{r exactly 3, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 x <- 0:30
 l = 15
 probset <- dpois(x = x, lambda = l)
-options(scipen=999) 
-probset
+barplot(probset, names.arg = x, space = 0, xlab = "Number of Calls", ylab = "Probability", main = "Probability Mass Function")
+
 ```
