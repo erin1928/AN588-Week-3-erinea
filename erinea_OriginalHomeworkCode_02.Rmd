@@ -25,9 +25,9 @@ Whether the annotation/commenting on your peer’s Original Homework Code is rea
 # Poisson random variable = x
 ```{r 8 or more calls, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-x <- 8
+x <- 0:30
 l = 15
 probset <- dpois(x = x, lambda = l)
+options(scipen=999) 
 probset
-# 0.01944
 ```
