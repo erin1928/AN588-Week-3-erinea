@@ -23,37 +23,37 @@ What challenges, if any, you both faced in your code that could not be helped by
 
 Whether the annotation/commenting on your peer’s Original Homework Code is readable and interpretable to you, and if not then how it could be improved.
 
-# what is the probability she will hear more than 8 calls during any given session?
-```{r 8 or more calls, include=FALSE}
+## What is the probability she will hear more than 8 calls during any given session?
+```{r 8 or more calls, include=TRUE}
 eight_calls <- ppois(q = 8, lambda = 15, upper.tri(TRUE))
 eight_calls
 ```
-# Probability of no calls
-```{r no calls, include=FALSE}
+## Probability of no calls
+```{r no calls, include=TRUE}
 no_calls <- dpois(x = 0, lambda =15)
 no_calls
 ```
-# Probability of exactly 3 calls
-```{r exactly 3, include=FALSE}
+## Probability of exactly 3 calls
+```{r exactly 3, include=TRUE}
 three_calls <- dpois(x = 3, lambda =15)
 three_calls
 ```
-# Plot the relevant Poisson mass function over the values in range 0 ≤ x ≤ 30.
-```{r Poisson mass function, include=FALSE}
+## Plot the relevant Poisson mass function over the values in range 0 ≤ x ≤ 30.
+```{r Poisson mass function, include=TRUE}
 x <- 0:30
 l = 15
 probset <- dpois(x = x, lambda = l)
 barplot(probset, names.arg = x, space = 0, xlab = "Number of Calls", ylab = "Probability", main = "Probability Mass Function")
 ```
 
-#Simulate 104 results from this distribution (i.e., 2 years of Saturday monitoring sessions)
-```{r simulate 104 results, include=FALSE}
+## Simulate 104 results from this distribution (i.e., 2 years of Saturday monitoring sessions)
+```{r simulate 104 results, include=TRUE}
 two_years <- rpois(104, lambda =15)
 two_years
 ```
 
-#Plot the simulated results using hist() and use xlim() to set the horizontal limits to be from 0 to 30
-```{r final plot, include=FALSE}
+## Plot the simulated results using hist() and use xlim() to set the horizontal limits to be from 0 to 30
+```{r final plot, include=TRUE}
 hist(two_years, probability = TRUE, main = "Two Years of Data",
     xlab = "Number of Calls", ylab = "probability", xlim = c(0,30))
 ```
