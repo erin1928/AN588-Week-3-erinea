@@ -8,12 +8,11 @@ output:
     highight: github
     toc: true
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## CHALLENGES 
+## Challenges
 
 What you learned from running their Original Homework Code that helped improve your own code.
 
