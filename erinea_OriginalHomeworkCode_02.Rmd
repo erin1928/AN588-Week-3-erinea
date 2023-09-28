@@ -44,3 +44,10 @@ l = 15
 probset <- dpois(x = x, lambda = l)
 barplot(probset, names.arg = x, space = 0, xlab = "Number of Calls", ylab = "Probability", main = "Probability Mass Function")
 ```
+
+#Simulate 104 results from this distribution (i.e., 2 years of Saturday monitoring sessions)
+```{r simulate 104 results, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+two_years <- rpois(104, lambda =15)
+two_years
+```
