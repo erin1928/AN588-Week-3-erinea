@@ -51,3 +51,10 @@ knitr::opts_chunk$set(echo = TRUE)
 two_years <- rpois(104, lambda =15)
 two_years
 ```
+
+#Plot the simulated results using hist() and use xlim() to set the horizontal limits to be from 0 to 30
+```{r simulate 104 results, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+hist(two_years, probability = TRUE, main = "Two Years of Data",
+    xlab = "Number of Calls", ylab = "probability", xlim = c(0,30))
+```
