@@ -23,22 +23,18 @@ Whether the annotation/commenting on your peer’s Original Homework Code is rea
 # mean is 15
 # Poisson random variable = x
 ```{r 8 or more calls, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 ppois(q = 8, lambda = 15, upper.tri(TRUE))
 ```
 # Probability of no calls
 ```{r no calls, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 dpois(x = 0, lambda =15)
 ```
 # Probability of exactly 3 calls
 ```{r exactly 3, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 dpois(x = 3, lambda =15)
 ```
 # Plot the relevant Poisson mass function over the values in range 0 ≤ x ≤ 30.
-```{r exactly 3, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r Poisson mass function, include=FALSE}
 x <- 0:30
 l = 15
 probset <- dpois(x = x, lambda = l)
@@ -47,14 +43,12 @@ barplot(probset, names.arg = x, space = 0, xlab = "Number of Calls", ylab = "Pro
 
 #Simulate 104 results from this distribution (i.e., 2 years of Saturday monitoring sessions)
 ```{r simulate 104 results, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 two_years <- rpois(104, lambda =15)
 two_years
 ```
 
 #Plot the simulated results using hist() and use xlim() to set the horizontal limits to be from 0 to 30
-```{r simulate 104 results, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r final plot, include=FALSE}
 hist(two_years, probability = TRUE, main = "Two Years of Data",
     xlab = "Number of Calls", ylab = "probability", xlim = c(0,30))
 ```
