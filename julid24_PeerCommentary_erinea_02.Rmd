@@ -1,0 +1,69 @@
+---
+title: "AN 588 Week 3"
+author: "Erin Anderson"
+date: "`r Sys.Date()`"
+output: 
+  prettydoc::html_pretty:
+    theme: cayman
+    highight: github
+    toc: true
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+<!-- I can't see your image in the HTML knit version. I referenced this website to get the code for inserting an image: https://www.earthdatascience.org/courses/earth-analytics/document-your-science/add-images-to-rmarkdown-report/)  -->
+<!-- This is the code I used: ![Titi monkey mom and baby <3](/Users/juliannadick/desktop/titi monkeys.png)   -->
+<!-- Basically, you save the image to your computer (I saved it to my local desktop & renamed it "titi monkeys"), and then you type in the path to the image. The words within the brackets [ ] are supposed to be the caption, but it didn't work so I put a separate line of text for the caption. Hope this helps! :)  -->
+
+## Challenges
+
+What you learned from running their Original Homework Code that helped improve your own code.
+
+What you did in your own code that might help to improve theirs.
+
+What challenges, if any, you both faced in your code that could not be helped by comparison.
+
+Whether the annotation/commenting on your peer’s Original Homework Code is readable and interpretable to you, and if not then how it could be improved.
+
+## What is the probability she will hear more than 8 calls during any given session?
+```{r 8 or more calls, include=TRUE}
+eight_calls <- ppois(q = 8, lambda = 15, upper.tri(TRUE))
+eight_calls
+```
+<!-- We got the same answer but used different lines of code to get there. In your code, what does upper.tri(TRUE) mean/do? -->
+<!-- I used 1-ppois, which is finding the compliment of hearing more than 8 calls, aka "the probability that we will NOT here more than 8 calls" (Book of R Chapter 15.1.5).  -->
+
+## Probability of no calls
+```{r no calls, include=TRUE}
+no_calls <- dpois(x = 0, lambda =15)
+no_calls
+```
+## Probability of exactly 3 calls
+```{r exactly 3, include=TRUE}
+three_calls <- dpois(x = 3, lambda =15)
+three_calls
+```
+## Plot the relevant Poisson mass function over the values in range 0 ≤ x ≤ 30.
+```{r Poisson mass function, include=TRUE}
+x <- 0:30
+l = 15
+probset <- dpois(x = x, lambda = l)
+barplot(probset, names.arg = x, space = 0, xlab = "Number of Calls", ylab = "Probability", main = "Probability Mass Function")
+```
+
+## Simulate 104 results from this distribution (i.e., 2 years of Saturday monitoring sessions)
+```{r simulate 104 results, include=TRUE}
+two_years <- rpois(104, lambda =15)
+two_years
+```
+<!-- Something I did in my code that made it only slightly more efficient was assigning the mean of 15 (aka lambda) to a variable at the start of HW 2 (i called my variable 'lambda'.. so creative lol). Assigning it at the beginning meant the variable stayed constant throughout this project. Kind of like how you assigned 15 to the variable 'l' in the Poisson Mass Function problem above. This is a very minor suggestion, though, just to avoid typing lambda=15 every time. Totally up to you. -->
+
+## Plot the simulated results using hist() and use xlim() to set the horizontal limits to be from 0 to 30
+```{r final plot, include=TRUE}
+hist(two_years, probability = TRUE, main = "Two Years of Data",
+    xlab = "Number of Calls", ylab = "probability", xlim = c(0,30))
+```
+
+The rest of the HW 2 problems look good. We used the same functions, so I don't really have any other suggestions about your code other than the few I left. 
+One suggestion I have is to leave comments about the functions you're using and what they do - sort of like a step-by-step. Sofi actually suggested this to me for HW 1. It's a great strategy for replicating your work in the future or just to follow your train of thought. If you leave detailed comments about your code, it's easier to return to it, pick up where you left off, and understand what you were doing. Even though I understood your code, other readers (theoretically) might not understand what all of the functions do, and it might be helpful to leave a step-by-step. I did this in mine if you want to take a look. 
+Overall, though, great work here Erin! :)  - Julianna
