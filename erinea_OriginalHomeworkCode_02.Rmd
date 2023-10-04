@@ -20,7 +20,7 @@ The major difference in my code that I didn't see in my peers code was the inclu
 
 I thought that overall this homework was relatively straight forward. The coding issues I struggled with most I was able to fix either via reviewing the modules or from the peer feedback I recieved on my initial homework code.
 
-I thought the comments my peers left me were very helpful, kind, and overall improvef my understanding of the assignment. I enjoyed looking through my peer's code and seeing how they chose to tackle the same problem, and felt like I learned a lot through their feedback and problem solving processes.
+I thought the comments my peers left me were very helpful, kind, and overall improved my understanding of the assignment. I enjoyed looking through my peer's code and seeing how they chose to tackle the same problem, and felt like I learned a lot through their feedback and problem solving processes.
 
 ## What is the probability she will hear more than 8 calls during any given session?
 ```{r 8 or more calls, include=TRUE}
