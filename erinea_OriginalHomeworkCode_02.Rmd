@@ -14,13 +14,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Challenges
 
-What you learned from running their Original Homework Code that helped improve your own code.
+I learned how to best import an image into my Rmarkdown from my peers as I was struggling with adding images that were easy to access via R and view on the final knit of my html file.
 
-What you did in your own code that might help to improve theirs.
+The major difference in my code that I didn't see in my peers code was the inclusion of upper.tri(TRUE) when solving the first homework problem. I used this method as a way to call the greater than or equal to parameter. My peers used 1 - ppois(q = 8, lqmbda = 15) to account for this variable which I thought was a unique and creative way of solving the same problem.
 
-What challenges, if any, you both faced in your code that could not be helped by comparison.
+I thought that overall this homework was relatively straight forward. The coding issues I struggled with most I was able to fix either via reviewing the modules or from the peer feedback I recieved on my initial homework code.
 
-Whether the annotation/commenting on your peer’s Original Homework Code is readable and interpretable to you, and if not then how it could be improved.
+I thought the comments my peers left me were very helpful, kind, and overall improvef my understanding of the assignment. I enjoyed looking through my peer's code and seeing how they chose to tackle the same problem, and felt like I learned a lot through their feedback and problem solving processes.
 
 ## What is the probability she will hear more than 8 calls during any given session?
 ```{r 8 or more calls, include=TRUE}
