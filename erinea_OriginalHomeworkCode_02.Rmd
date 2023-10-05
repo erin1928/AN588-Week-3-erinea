@@ -20,7 +20,7 @@ I learned how to best import an image into my Rmarkdown from my peers as I was s
 
 The major difference in my code that I didn't see in my peers code was the inclusion of upper.tri(TRUE) when solving the first homework problem. I used this method as a way to call the greater than or equal to parameter. My peers used 1 - ppois(q = 8, lqmbda = 15) to account for this variable which I thought was a unique and creative way of solving the same problem.
 
-I thought that overall this homework was relatively straight forward. The coding issues I struggled with most I was able to fix either via reviewing the modules or from the peer feedback I recieved on my initial homework code.
+I thought that overall this homework was relatively straight forward. The coding issues I struggled with most I was able to fix either via reviewing the modules or from the peer feedback I received on my initial homework code.
 
 I thought the comments my peers left me were very helpful, kind, and overall improved my understanding of the assignment. I enjoyed looking through my peer's code and seeing how they chose to tackle the same problem, and felt like I learned a lot through their feedback and problem solving processes.
 
