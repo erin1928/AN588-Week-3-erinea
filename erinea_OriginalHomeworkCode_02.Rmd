@@ -11,7 +11,9 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 ![Titi monkies!](/Users/erin/desktop/titi.png)
+
 ## Challenges
 
 I learned how to best import an image into my Rmarkdown from my peers as I was struggling with adding images that were easy to access via R and view on the final knit of my html file.
