@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-![Titi monkies!](/Users/erin/desktop/titi.png)
+![Titi monkey!](/Users/erin/desktop/titi.png)
 
 ## Challenges
 
